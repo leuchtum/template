@@ -1,6 +1,5 @@
 black
 mypy
-pre-commit
 ptpython
 pylint
 pytest
