@@ -1,5 +1,6 @@
 black
 mypy
+pre-commit
 ptpython
 pytest
 pytest-cov
