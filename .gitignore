@@ -1,6 +1,7 @@
 ## User stuff
 #.vscode
 #.mypy.ini
+#dev_checks.sh
 #
 ## Byte-compiled / optimized / DLL files
 #__pycache__/
