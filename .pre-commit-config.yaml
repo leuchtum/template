@@ -1,0 +1,29 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  hooks:
+    -   id: check-yaml
+    -   id: check-toml
+    -   id: check-json
+    -   id: pretty-format-json
+    -   id: check-docstring-first
+    -   id: debug-statements
+    -   id: requirements-txt-fixer
+    -   id: name-tests-test
+    -   id: detect-private-key
+    -   id: detect-aws-credentials
+- repo: local
+  hooks:
+    -   id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+    -   id: black
+        name: black
+        entry: black
+        language: system
+        types: [python]
+- repo: https://github.com/pre-commit/mirrors-mypy
+  hooks:
+    -   id: mypy
+        args: [--ignore-missing-imports]
