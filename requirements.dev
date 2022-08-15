@@ -1,0 +1,5 @@
+black
+mypy
+ptpython
+pytest
+pytest-cov
