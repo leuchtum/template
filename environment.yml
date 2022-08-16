@@ -10,6 +10,7 @@ dependencies:
   - seaborn
   # DEVELOPMENT
   - black
+  - hypothesis
   - isort
   - mypy
   - pylint
