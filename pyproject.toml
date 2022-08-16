@@ -1,0 +1,22 @@
+[tool.pylint.similarities]
+min-similarity-lines = 11
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+addopts = "--cov --cov-report term-missing --cov-fail-under 95"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["src"]
+
+[tool.coverage.report]
+skip_empty = true
+
+[mypy]
+ignore_missing_imports = true
+plugins = ["numpy.typing.mypy_plugin"]
+strict = true
+warn_return_any = true
+warn_unreachable = true
