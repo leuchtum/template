@@ -2,22 +2,22 @@ COLOR='\033[1;37m'
 NOCOLOR='\033[0m'
 
 echo "$COLOR\n=== ISORT on src ============\n$NOCOLOR"
-poetry run isort src
+isort src
 echo "$COLOR\n=== ISORT on tests ==========\n$NOCOLOR"
-poetry run isort tests
+isort tests
 
 echo "$COLOR\n=== BLACK on src ============\n$NOCOLOR"
-poetry run black src
+black src
 echo "$COLOR\n=== BLACK on tests ==========\n$NOCOLOR"
-poetry run black tests
+black tests
 
 echo "$COLOR\n=== PYLINT on src ===========\n$NOCOLOR"
-poetry run pylint src
+pylint src
 echo "$COLOR\n=== PYLINT on tests =========\n$NOCOLOR"
-poetry run pylint tests
+pylint tests
 
 echo "$COLOR\n=== MYPY ====================\n$NOCOLOR"
-poetry run mypy .
+mypy .
 
 echo "$COLOR\n=== PYTEST ==================\n$NOCOLOR"
-poetry run pytest .
+pytest .
